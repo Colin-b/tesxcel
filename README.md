@@ -1,6 +1,15 @@
 <h2 align="center">Utility functions to test Microsoft Excel books</h2>
 
 <p align="center">
-<a href="https://github.com/ambv/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 <a href='https://pse.tools.digital.engie.com/drm-all.gem/job/team/view/Python%20modules/job/tesxcel/job/master/'><img src='https://pse.tools.digital.engie.com/drm-all.gem/buildStatus/icon?job=team/tesxcel/master'></a>
+<a href='https://pse.tools.digital.engie.com/drm-all.gem/job/team/view/Python%20modules/job/tesxcel/job/master/cobertura/'><img src='https://pse.tools.digital.engie.com/drm-all.gem/buildStatus/icon?job=team/tesxcel/master&config=testCoverage'></a>
+<a href='https://pse.tools.digital.engie.com/drm-all.gem/job/team/view/Python%20modules/job/tesxcel/job/master/lastSuccessfulBuild/testReport/'><img src='https://pse.tools.digital.engie.com/drm-all.gem/buildStatus/icon?job=team/tesxcel/master&config=testCount'></a>
 </p>
+
+## How to install
+1. [python 3.7+](https://www.python.org/downloads/) must be installed
+2. Use pip to install module:
+```sh
+python -m pip install tesxcel -i https://all-team-remote:tBa%40W%29tvB%5E%3C%3B2Jm3@artifactory.tools.digital.engie.com/artifactory/api/pypi/all-team-pypi-prod/simple
+```
