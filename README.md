@@ -12,7 +12,10 @@ Ensure that two Microsoft Excel files have the same cell types and content in ev
 ```python
 import tesxcel
 
-def test_excel_file():
+def test_excel_file_using_path():
+    tesxcel.assert_excel_content("/path/to/the/first_file.xlsx", "/path/to/the/second_file.xlsx")
+
+def test_excel_file_using_content():
     received_excel_content: bytes = None
     tesxcel.assert_excel_content(received_excel_content, "/path/to/the/excel_file_to_compare.xlsx")
 ```
