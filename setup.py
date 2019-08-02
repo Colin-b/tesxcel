@@ -16,10 +16,12 @@ setup(
         # Used to read Microsoft Excel file content
         "xlrd==1.2.0",
         # Used to ensure Black code style is checked on pre-commit
-        "pre-commit==1.16.1",
+        "pre-commit==1.17.0",
     ],
     extras_require={
         "testing": [
+            # Used to run tests
+            "pytest==5.0.1",
         ],
     },
     python_requires=">=3.6",
