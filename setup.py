@@ -14,15 +14,13 @@ setup(
     packages=find_packages(exclude=["test"]),
     install_requires=[
         # Used to read Microsoft Excel file content
-        "xlrd==1.2.0",
-        # Used to ensure Black code style is checked on pre-commit
-        "pre-commit==1.17.0",
+        "xlrd==1.2.0"
     ],
     extras_require={
         "testing": [
             # Used to run tests
-            "pytest==5.0.1",
-        ],
+            "pytest==5.0.1"
+        ]
     },
     python_requires=">=3.6",
     project_urls={
