@@ -19,7 +19,7 @@ setup(
     extras_require={
         "testing": [
             # Used to run tests
-            "pytest==5.0.1"
+            "pytest==5.1.1"
         ]
     },
     python_requires=">=3.6",
