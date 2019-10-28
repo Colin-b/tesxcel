@@ -1,5 +1,6 @@
 from typing import Union
 import xlrd
+from xlrd.sheet import Sheet
 
 
 def assert_excel_content(
@@ -23,7 +24,9 @@ def assert_excel_content(
         )
 
 
-def _assert_sheet_content(sheet_name: str, actual_worksheet, expected_worksheet):
+def _assert_sheet_content(
+    sheet_name: str, actual_worksheet: Sheet, expected_worksheet: Sheet
+):
     assert (
         actual_worksheet.nrows == expected_worksheet.nrows
     ), f"Different number of rows in {sheet_name} sheet"
