@@ -14,18 +14,18 @@ setup(
     packages=find_packages(exclude=["test"]),
     install_requires=[
         # Used to read Microsoft Excel file content
-        "xlrd==1.2.0"
+        "xlrd==1.*"
     ],
     extras_require={
         "testing": [
             # Used to run tests
-            "pytest==5.1.1"
+            "pytest==5.*"
         ]
     },
     python_requires=">=3.6",
     project_urls={
-        "Changelog": "https://github.tools.digital.engie.com/GEM-Py/tesxcel/blob/master/CHANGELOG.md",
-        "Issues": "https://github.tools.digital.engie.com/GEM-Py/tesxcel/issues",
+        "Changelog": "https://github.tools.digital.engie.com/gempy/tesxcel/blob/master/CHANGELOG.md",
+        "Issues": "https://github.tools.digital.engie.com/gempy/tesxcel/issues",
     },
     license="MIT",
     classifiers=[
@@ -37,6 +37,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "Topic :: Software Development :: Build Tools",
     ],
     keywords=["excel", "test"],
