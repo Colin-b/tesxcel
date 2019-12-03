@@ -6,32 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [2.2.0] - 2019-10-28
-### Changed
-- Do not use fixed first level dependencies.
-
-## [2.1.0] - 2019-08-02
-### Added
-- Allow to compare two files using path to a file.
-
-## [2.0.0] - 2019-08-02
-### Changed
-- Switch to pytest.
-- Update pre-commit to version 1.17.0
-- Do not write a temporary file to disk. Allow concurrent tests run.
-
-### Added
-- Documentation on how to use.
-
-### Removed
-- ExcelTestCase class
-
-## [1.0.0] - 2019-06-24
+## [2.3.0] - 2019-12-03
 ### Added
 - Initial release.
 
-[Unreleased]: https://github.tools.digital.engie.com/gempy/tesxcel/compare/v2.2.0...HEAD
-[2.2.0]: https://github.tools.digital.engie.com/gempy/tesxcel/compare/v2.1.0...v2.2.0
-[2.1.0]: https://github.tools.digital.engie.com/gempy/tesxcel/compare/v2.0.0...v2.1.0
-[2.0.0]: https://github.tools.digital.engie.com/gempy/tesxcel/compare/v1.0.0...v2.0.0
-[1.0.0]: https://github.tools.digital.engie.com/gempy/tesxcel/releases/tag/v1.0.0
+[Unreleased]: https://github.com/Colin-b/tesxcel/compare/v2.3.0...HEAD
+[2.3.0]: https://github.com/Colin-b/tesxcel/releases/tag/v2.3.0

@@ -8,25 +8,15 @@ with open(os.path.join(this_dir, "README.md"), "r") as f:
 setup(
     name="tesxcel",
     version=open("tesxcel/version.py").readlines()[-1].split()[-1].strip("\"'"),
-    description="Utility functions to test Microsoft Excel books",
+    author="Colin Bounouar",
+    author_email="colin.bounouar.dev@gmail.com",
+    maintainer="Colin Bounouar",
+    maintainer_email="colin.bounouar.dev@gmail.com",
+    url="https://colin-b.github.io/tesxcel/",
+    description="Utility functions to tests Microsoft Excel books",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=find_packages(exclude=["test"]),
-    install_requires=[
-        # Used to read Microsoft Excel file content
-        "xlrd==1.*"
-    ],
-    extras_require={
-        "testing": [
-            # Used to run tests
-            "pytest==5.*"
-        ]
-    },
-    python_requires=">=3.6",
-    project_urls={
-        "Changelog": "https://github.tools.digital.engie.com/gempy/tesxcel/blob/master/CHANGELOG.md",
-        "Issues": "https://github.tools.digital.engie.com/gempy/tesxcel/issues",
-    },
+    download_url="https://pypi.org/project/tesxcel/",
     license="MIT",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
@@ -40,6 +30,23 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Topic :: Software Development :: Build Tools",
     ],
-    keywords=["excel", "test"],
+    keywords=["excel", "tests"],
+    packages=find_packages(exclude=["tests*"]),
+    install_requires=[
+        # Used to read Microsoft Excel file content
+        "xlrd==1.*"
+    ],
+    extras_require={
+        "testing": [
+            # Used to run tests and check coverage
+            "pytest-cov==2.*",
+        ]
+    },
+    python_requires=">=3.6",
+    project_urls={
+        "GitHub": "https://github.com/Colin-b/tesxcel",
+        "Changelog": "https://github.com/Colin-b/tesxcel/blob/master/CHANGELOG.md",
+        "Issues": "https://github.com/Colin-b/tesxcel/issues",
+    },
     platforms=["Windows", "Linux"],
 )
