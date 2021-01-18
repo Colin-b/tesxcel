@@ -34,7 +34,7 @@ setup(
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
         # Used to read Microsoft Excel file content
-        "xlrd==1.*"
+        "openpyxl==3.*"
     ],
     extras_require={
         "testing": [

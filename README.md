@@ -10,6 +10,7 @@
 </p>
 
 Ensure that two Microsoft Excel files have the same cell types and content in every sheet.
+Supported file formats are: `.xlsx`, `.xlsm`, `.xltx`, `.xltm`
 
 ```python
 import tesxcel

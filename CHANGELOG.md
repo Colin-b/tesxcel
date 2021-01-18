@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Use `openpyxl` instead of `xlrd` as the latter doesn't support .xlsx format anymore.
+
+### Added
+- Added [`openpyxl`](https://openpyxl.readthedocs.io/en/stable/changes.html)
+
+### Removed
+- Removed [`xlrd`](https://xlrd.readthedocs.io/en/latest/changes.html)
 
 ## [2.3.0] - 2019-12-03
 ### Added
