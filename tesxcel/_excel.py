@@ -11,7 +11,6 @@ def assert_excel_content(
     else:
         actual_workbook = openpyxl.load_workbook(BytesIO(file_path_or_actual_content))
     expected_workbook = openpyxl.open(expected_file_path)
-    print()
     assert sorted(actual_workbook.sheetnames) == sorted(
         expected_workbook.sheetnames
     ), "Different sheet names"
